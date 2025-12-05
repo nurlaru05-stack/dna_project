@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataHub ВУЗ-ов "RK"</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>DataHub ВУЗ-ов "RK"</h1>
+      <nav>
+        <ul>
+          <li><a href="#universities">Каталог ВУЗов</a></li>
+          <li><a href="#compare">Сравнение ВУЗов</a></li>
+          <li><a href="#about">О проекте</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <div class="container">
+      <h2>Найдите свой университет в Казахстане</h2>
+      <p>Полная информация о вузах, академических программах, приёме и 3D-турах</p>
+    </div>
+  </section>
+
+  <!-- Universities Catalog -->
+  <section id="universities" class="universities">
+    <div class="container">
+      <h2>Каталог университетов</h2>
+      <div class="university-card">
+        <h3>Назарбаев Университет</h3>
+        <p>Миссия, достижения и история университета...</p>
+        <a href="university.html">Подробнее</a>
+      </div>
+      <div class="university-card">
+        <h3>КазНУ</h3>
+        <p>Миссия, достижения и история университета...</p>
+        <a href="university.html">Подробнее</a>
+      </div>
+      <!-- Добавить ещё карточки -->
+    </div>
+  </section>
+
+  <!-- Compare Feature -->
+  <section id="compare" class="compare">
+    <div class="container">
+      <h2>Сравнить университеты</h2>
+      <form id="compare-form">
+        <select id="uni1">
+          <option value="0">Выберите университет</option>
+          <option value="1">Назарбаев Университет</option>
+          <option value="2">КазНУ</option>
+        </select>
+        <select id="uni2">
+          <option value="0">Выберите университет</option>
+          <option value="1">Назарбаев Университет</option>
+          <option value="2">КазНУ</option>
+        </select>
+        <button type="button" onclick="compareUniversities()">Сравнить</button>
+      </form>
+      <div id="compare-result"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 DataHub ВУЗ-ов "RK"</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
